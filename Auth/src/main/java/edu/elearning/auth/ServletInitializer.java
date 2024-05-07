@@ -1,4 +1,4 @@
-package tech.amg.auth.Auth;
+package edu.elearning.auth;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

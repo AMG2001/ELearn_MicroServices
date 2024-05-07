@@ -1,4 +1,4 @@
-package tech.amg.auth.Auth;
+package edu.elearning.auth.Auth;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
