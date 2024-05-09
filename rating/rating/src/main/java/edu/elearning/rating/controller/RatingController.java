@@ -38,6 +38,11 @@ public class RatingController {
         return ratingService.getRatingsByStudentId(studentId);
     }
 
+    @GetMapping("/course/{courseId}")
+    public List<RatingDTO> getRatingsByCourseId(@PathVariable String courseId){
+        return ratingService.getRatingsByCourseId(courseId);
+
+    }
     @PutMapping("/{id}")
     public RatingDTO updateRating(@PathVariable Long id, @RequestBody RatingDTO updatedRating) {
         return ratingService.updateRating(id, updatedRating);

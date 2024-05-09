@@ -64,4 +64,9 @@ public class RatingServiceImpl implements RatingService {
     public List<RatingDTO> getRatingsByStudentId(String studentId) {
         return ratingDao.findByStudentId(studentId).stream().map(ratingMapper::toRatingDTO).toList();
     }
+
+    @Override
+    public List<RatingDTO> getRatingsByCourseId(String courseId) {
+        return ratingDao.findByCourseId(courseId).stream().map(ratingMapper::toRatingDTO).toList();
+    }
 }

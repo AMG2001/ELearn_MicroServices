@@ -14,4 +14,5 @@ public interface RatingService {
     RatingDTO updateRating(Long id, RatingDTO updatedRating);
     void deleteRating(Long id);
     List<RatingDTO> getRatingsByStudentId(String studentId);
+    List<RatingDTO> getRatingsByCourseId(String courseId);
 }

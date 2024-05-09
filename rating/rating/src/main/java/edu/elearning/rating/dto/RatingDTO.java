@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 public class RatingDTO {
     private long id;
     private String studentId;
-    private long courseId;
+    private String courseId;
     private long ratingValue;
     private LocalDateTime ratingDate;
 
@@ -29,11 +29,11 @@ public class RatingDTO {
         this.studentId = studentId;
     }
 
-    public long getCourseId() {
+    public String getCourseId() {
         return courseId;
     }
 
-    public void setCourseId(long courseId) {
+    public void setCourseId(String courseId) {
         this.courseId = courseId;
     }
 

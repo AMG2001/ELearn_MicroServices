@@ -17,7 +17,7 @@ public class Rating {
     private long ratingValue;
     private LocalDateTime ratingDate;
     private String studentId;
-    private long courseId;
+    private String courseId;
 
     public long getId() {
         return id;
@@ -35,11 +35,11 @@ public class Rating {
         this.studentId = studentId;
     }
 
-    public long getCourseId() {
+    public String getCourseId() {
         return courseId;
     }
 
-    public void setCourseId(long courseId) {
+    public void setCourseId(String courseId) {
         this.courseId = courseId;
     }
 

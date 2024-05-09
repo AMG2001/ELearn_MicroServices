@@ -9,8 +9,6 @@ import org.mapstruct.factory.Mappers;
 @Mapper(componentModel = "spring")
 public interface RatingMapper {
 
-//    RatingMapper INSTANCE = Mappers.getMapper(RatingMapper.class);
-
     @Mapping(source = "studentId", target = "studentId")
     @Mapping(source = "courseId", target = "courseId")
     Rating toRating(RatingDTO ratingDTO);

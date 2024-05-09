@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 public interface RatingDao extends JpaRepository<Rating,Long> {
-
     List<Rating> findByStudentId(String studentId);
+    List<Rating> findByCourseId(String courseId);
 
 }
